@@ -4,7 +4,8 @@ import TopHeader from "../../components/TopHeader/TopHeader";
 import AboutSection from "../../components/AboutSection/AboutSection";
 import ServicePage from "../../components/ServicePage/ServicePage";
 import Showcase from "../../components/Showcase/Showcase";
-import Footer from "../../components/Footer/Footer";
+import CallToAction from "../../components/CallToAction/CallToAction";
+
 
 const Home = () => {
   return (
@@ -13,8 +14,9 @@ const Home = () => {
            <AboutSection/>
            <ServicePage/>
         <Showcase/>
+        <CallToAction/>
         
-           <Footer/>
+     
     </div>
   );
 };

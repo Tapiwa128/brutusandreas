@@ -1,80 +1,90 @@
 .footer {
-  background: #0a0a0a;
-  color: #f0f0f0;
-  padding: 3rem 1rem 1rem;
+  background-color: #000000;
+  color: #dce3ea;
+  padding: 60px 20px 30px;
   font-family: 'Segoe UI', sans-serif;
+  position: relative;
 }
 
-.footer-container {
+.footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
+  gap: 2rem;
 }
 
-.footer-about,
-.footer-services,
-.footer-social {
-  flex: 1 1 300px;
+.footer-section {
+  flex: 1 1 250px;
 }
 
-.footer h3 {
-  margin-bottom: 1rem;
+.footer-section h2,
+.footer-section h3 {
   color: #ffffff;
+  margin-bottom: 15px;
   font-size: 1.3rem;
+  position: relative;
 }
 
-.footer p {
-  line-height: 1.6;
+.footer-section p {
   font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d0d6dc;
 }
 
-.footer-services ul {
+.footer-section ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-services li {
-  margin-bottom: 0.5rem;
+.footer-section ul li {
+  margin-bottom: 10px;
   font-size: 0.95rem;
+  color: #b0bac5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  color: #00aaff;
 }
 
 .social-icons {
   display: flex;
-  gap: 1rem;
-  margin-top: 0.5rem;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .social-icons a {
-  font-size: 1.3rem;
-  color: #f0f0f0;
-  background: #222;
-  padding: 0.6rem;
-  border-radius: 50%;
-  transition: 0.3s ease;
-  display: inline-flex;
+  background: #14283d;
+  color: #dce3ea;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s ease;
 }
 
 .social-icons a:hover {
-  background: #00a8ff;
+  background-color: #00aaff;
+  color: #fff;
   transform: scale(1.1);
-  color: white;
 }
 
 .footer-bottom {
+  border-top: 1px solid #e6eaef;
   text-align: center;
-  border-top: 1px solid #444;
-  padding-top: 1rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  padding-top: 20px;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #aab3bb;
 }
 
 .footer-bottom a {
-  color: #00a8ff;
+  color: #00aaff;
   text-decoration: none;
 }
 
@@ -82,14 +92,18 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .footer-container {
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-content {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .footer-about, .footer-services, .footer-social {
-    width: 100%;
+  .footer-section {
+    flex: 1 1 100%;
+  }
+
+  .social-icons {
+    justify-content: center;
   }
 }

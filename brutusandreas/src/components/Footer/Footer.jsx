@@ -11,18 +11,17 @@ import {
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-
-        <div className="footer-about">
-          <h3>About Brutus Andreas</h3>
+      <div className="footer-content">
+        <div className="footer-section about">
+          <h2>Brutus Andreas</h2>
           <p>
-            We are committed to delivering innovative and sustainable solutions in logistics,
-            banking, telecom, and funeral services. Partner with us for excellence and integrity.
+            A leader in telecom, banking, logistics and insurance solutions.
+            We pride ourselves on innovation, sustainability and community impact.
           </p>
         </div>
 
-        <div className="footer-services">
-          <h3>Our Services</h3>
+        <div className="footer-section links">
+          <h3>Services</h3>
           <ul>
             <li>Econet Services</li>
             <li>Banking Services</li>
@@ -32,20 +31,23 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="footer-social">
+        <div className="footer-section social">
           <h3>Connect with Us</h3>
           <div className="social-icons">
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer"><FaFacebookF /></a>
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer"><FaTwitter /></a>
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer"><FaInstagram /></a>
-            <a href="https://wa.me/263782981579" target="_blank" rel="noreferrer"><FaWhatsapp /></a>
+            <a href="#"><FaLinkedinIn /></a>
+            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaTwitter /></a>
+            <a href="#"><FaInstagram /></a>
+            <a href="https://wa.me/263782981579"><FaWhatsapp /></a>
           </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>Website developed by <a href="https://www.pakamatech.co.zw" target="_blank" rel="noreferrer">Pakama Tech Solutions</a></p>
+        <p>
+          © {new Date().getFullYear()} Brutus Andreas. All Rights Reserved. <br />
+          Website developed by <a href="https://www.pakamatech.co.zw" target="_blank" rel="noreferrer">Pakama Tech Solutions</a>
+        </p>
       </div>
     </footer>
   );

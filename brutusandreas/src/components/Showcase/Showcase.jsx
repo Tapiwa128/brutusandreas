@@ -1,12 +1,12 @@
 import React from 'react';
 import './Showcase.css';
 
-import zb from '../../assets/logos/zb.png';
-import zetdc from '../../assets/logos/zetdc.png';
-import doves from '../../assets/logos/doves.png';
-import dstv from '../../assets/logos/dstv.png';
-import econet from '../../assets/logos/econet.png';
-import pakama from '../../assets/logos/pakama.png';
+import zb from '../../assets/zb.png';
+import zetdc from '../../assets/zetdc.png';
+import doves from '../../assets/doves.png';
+import dstv from '../../assets/dstv.png';
+import econet from '../../assets/econet.png';
+import pakama from '../../assets/pakama.png';
 
 function Showcase() {
   const partners = [

@@ -1,45 +1,68 @@
 .navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0.8rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #0a0a23;
-  padding: 0.7rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .navbar-logo img {
-  height: 45px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.05);
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
   gap: 2rem;
-  transition: all 0.3s ease;
+  align-items: center;
 }
 
 .navbar-links li a {
-  color: white;
-  text-decoration: none;
+  color: #ffffff;
   font-weight: 500;
-  font-size: 1rem;
+  text-decoration: none;
   position: relative;
-  transition: color 0.3s;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
-.navbar-links li a:hover,
+.navbar-links li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  color: #00ffff;
+}
+
 .navbar-links .active a {
-  color: #00ffaa;
+  color: #00ffff;
+  font-weight: 600;
+  text-shadow: 0 0 5px #00ffff;
 }
 
 .hamburger {
   display: none;
   font-size: 1.8rem;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
+  z-index: 1001;
 }
 
 /* Mobile Styles */
@@ -52,13 +75,15 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background: #0a0a23;
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
+    background: rgba(10, 10, 30, 0.95);
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     pointer-events: none;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    border-radius: 0 0 10px 10px;
   }
 
   .navbar-links.open {
@@ -69,7 +94,7 @@
   }
 
   .navbar-links li {
+    padding: 1rem;
     text-align: center;
-    padding: 0.8rem 0;
   }
 }

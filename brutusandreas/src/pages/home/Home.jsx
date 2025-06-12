@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css"; 
 import TopHeader from "../../components/TopHeader/TopHeader";
-import Showcase from "../../components/Showcase";
+import Showcase from "../../components/Showcase/Showcase";
 import Footer from "../../components/Footer";
 
 const Home = () => {

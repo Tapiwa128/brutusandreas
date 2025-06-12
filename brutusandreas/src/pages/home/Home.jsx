@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css"; 
-import TopHeader from "../../components/TopHeader";
+import TopHeader from "../../components/TopHeader/TopHeader";
 import Showcase from "../../components/Showcase";
 import Footer from "../../components/Footer";
 

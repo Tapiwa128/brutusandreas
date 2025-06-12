@@ -9,6 +9,7 @@ const Home = () => {
   return (
     <div>
       <TopHeader />
+      <AboutSection />
       <Showcase />
       <main>
         <h1>Welcome to Brutus Andreas Home Page</h1>

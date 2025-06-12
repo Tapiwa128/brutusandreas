@@ -26,12 +26,13 @@ const TopHeader = () => {
           style={{ backgroundImage: `url(${img})` }}
         >
           <div className="overlay">
-            <h1>Welcome to <span className="highlight">Brutus Andreas</span></h1>
+            <h1><span className="brand">Brutus Andreas</span></h1>
+            <h2>Innovating Infrastructure, Empowering Progress</h2>
             <p>
-              Our vision is to be a global leader in sustainable infrastructure development,
-              energy solutions, and logistics, empowering progress and connecting communities
-              for a better future.
+              Our vision is to lead the world in sustainable infrastructure, smart energy solutions, 
+              and integrated logistics — connecting communities and creating a better tomorrow.
             </p>
+            <button className="cta-button">Discover Our Vision</button>
           </div>
         </div>
       ))}

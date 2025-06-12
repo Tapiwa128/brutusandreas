@@ -1,0 +1,89 @@
+.servicepage {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  border-radius: 2rem;
+}
+
+.servicepage-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #0a3d62;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.service-grid.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1rem;
+  background-color: #0a3d62;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.service-card h2 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .servicepage-title {
+    font-size: 2rem;
+  }
+
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+  }
+}

@@ -1,13 +1,18 @@
 import React from 'react';
 import './Services.css';
+import Header1 from '../../components/Header1/header1';
+import ServicePage from '../../components/ServicePage/ServicePage';
 
 function Services() {
   return (
-    <section className="services-section">
-      <h2>Our Services</h2>
-      <p>Explore the services we offer to help you succeed.</p>
-      {/* Add your services list or details here */}
-    </section>
+   
+     <div>
+        <Header1 />
+        <ServicePage />
+    
+
+     </div>
+
   );
 }
 

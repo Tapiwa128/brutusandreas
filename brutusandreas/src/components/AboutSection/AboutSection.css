@@ -1,91 +1,122 @@
-.about-section {
+.about-bg {
+  background: url('../../assets/slide3.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 5rem 0;
+  color: white;
+}
+
+.about-overlay {
+  background: rgba(0, 0, 0, 0.65);
   padding: 4rem 2rem;
-  background: linear-gradient(to right, #f9f9f9, #eef3f7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
 }
 
 .about-container {
   display: flex;
-  flex-wrap: wrap;
   max-width: 1200px;
-  align-items: flex-start;
-  gap: 2rem;
+  margin: auto;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .about-logo img {
-  max-width: 250px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .about-content {
-  flex: 1;
-  min-width: 300px;
-  color: #222;
+  flex: 2;
+  animation: fadeInUp 1s ease forwards;
 }
 
-.about-content h2 {
-  font-size: 2.5rem;
-  color: #0a0a30;
+.about-content h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
   margin-bottom: 1rem;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.about-content p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 1.2rem;
+.about-content h1 span {
+  color: #00bfa6;
+}
+
+.about-content .intro {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .about-content .mission {
-  font-weight: 500;
-  color: #1a1a40;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
 }
 
-.about-content h3 {
-  font-size: 1.6rem;
-  margin-top: 2rem;
-  color: #0a0a30;
-}
-
-.values-list {
+.about-content .values {
   list-style: none;
   padding: 0;
-  margin: 1rem 0;
+  margin: 1.2rem 0;
 }
 
-.values-list li {
-  background: #ffffff;
-  margin-bottom: 0.5rem;
-  padding: 0.7rem 1rem;
-  border-left: 6px solid #00bfa6;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  font-weight: 500;
+.about-content .values li {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
 }
 
-.history {
+.about-content .history {
   font-style: italic;
-  margin-top: 1.5rem;
-  color: #333;
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
 }
 
-@media screen and (max-width: 768px) {
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.9rem 2rem;
+  background: #00bfa6;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background: #009e89;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
   .about-container {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
 
-  .about-content {
-    text-align: center;
+  .about-content .values li {
+    justify-content: center;
   }
 
-  .values-list li {
-    text-align: left;
+  .about-logo {
+    margin-bottom: 2rem;
   }
 }
-

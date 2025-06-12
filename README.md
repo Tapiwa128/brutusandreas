@@ -37,7 +37,7 @@ We are committed to being:
 | Category        | Tools/Technologies Used        |
 |----------------|-------------------------------|
 | Framework       | [React.js](https://reactjs.org/)           |
-| Styling         | Pure CSS                      |
+| Styling         | CSS                      |
 | Package Manager | [npm](https://www.npmjs.com/) |
 | Code Editor     | [VS Code](https://code.visualstudio.com/) |
 | Language        | JavaScript (ES6+)             |
@@ -69,7 +69,6 @@ Brutus-Andreas/
 │
 ├── package.json        # Project metadata and dependencies
 ├── README.md           # This file
-
 
 
 

@@ -8,19 +8,10 @@ import Footer from "../../components/Footer/Footer";
 const Home = () => {
   return (
     <div>
-      <TopHeader />
-      <AboutSection />
-      <Showcase />
-      <main>
-        <h1>Welcome to Brutus Andreas Home Page</h1>
-        <p>
-          This is some dummy content for your homepage. You can customize this section with your own information, images, or components.
-        </p>
-        <div>
-          Dummy Box: Add your featured content here!
-        </div>
-      </main>
-      <Footer />
+      <TopHeader/>
+           <AboutSection/>
+        <Showcase/>
+           <Footer/>
     </div>
   );
 };

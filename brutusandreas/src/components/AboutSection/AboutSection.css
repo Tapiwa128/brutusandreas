@@ -1,122 +1,126 @@
-.about-bg {
-  background: url('../../assets/slide3.jpg') no-repeat center center/cover;
-  position: relative;
-  padding: 5rem 0;
-  color: white;
-}
-
-.about-overlay {
-  background: rgba(0, 0, 0, 0.65);
-  padding: 4rem 2rem;
-}
-
-.about-container {
+.about-wrapper {
   display: flex;
-  max-width: 1200px;
-  margin: auto;
-  align-items: center;
-  gap: 3rem;
-  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  background: #f4f7fa;
 }
 
-.about-logo {
+.about-card {
+  display: flex;
+  gap: 2rem;
+  max-width: 1400px; /* slightly increased width */
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 2rem;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  backdrop-filter: blur(15px);
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 35px 60px rgba(0, 0, 0, 0.15);
+}
+
+.about-left {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.about-logo img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+.about-logo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem; /* square with soft corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: none; /* removed green border */
 }
 
-.about-content {
+.about-right {
   flex: 2;
-  animation: fadeInUp 1s ease forwards;
+  color: #333;
 }
 
-.about-content h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
+.about-right h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-weight: 800;
 }
 
-.about-content h1 span {
+.about-right h1 span {
   color: #00bfa6;
 }
 
-.about-content .intro {
-  font-size: 1.2rem;
+.about-intro {
+  font-size: 1.15rem;
   margin-bottom: 1rem;
-}
-
-.about-content .mission {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
   line-height: 1.7;
 }
 
-.about-content .values {
+.about-values {
   list-style: none;
   padding: 0;
-  margin: 1.2rem 0;
+  margin: 1rem 0;
 }
 
-.about-content .values li {
+.about-values li {
   font-size: 1.05rem;
-  margin-bottom: 0.6rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #444;
 }
 
-.about-content .history {
+.about-values li svg {
+  color: #00bfa6;
+  min-width: 20px;
+  font-size: 1.2rem;
+}
+
+.about-history {
   font-style: italic;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
   font-size: 1.05rem;
+  color: #555;
 }
 
-.cta-button {
+.about-cta {
   display: inline-block;
   margin-top: 2rem;
   padding: 0.9rem 2rem;
   background: #00bfa6;
   color: white;
   font-size: 1.1rem;
-  border-radius: 40px;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 10px 20px rgba(0, 191, 166, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-.cta-button:hover {
-  background: #009e89;
+.about-cta:hover {
+  background: #00917a;
   transform: scale(1.05);
 }
 
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    transform: translateY(40px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 900px) {
-  .about-container {
+  .about-card {
     flex-direction: column;
+    padding: 2rem;
     text-align: center;
   }
 
-  .about-content .values li {
-    justify-content: center;
+  .about-left {
+    margin-bottom: 2rem;
   }
 
   .about-logo {
-    margin-bottom: 2rem;
+    width: 180px;
+    height: 180px;
   }
 }

@@ -1,39 +1,51 @@
 import React from 'react';
 import './AboutSection.css';
-import logo from '../../assets/logo.png'; // Update path if needed
+import logo from '../../assets/logo.png'; // adjust path as needed
 
-const AboutSection = () => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faShieldAlt,
+  faUserFriends,
+  faLightbulb,
+  faBalanceScale,
+  faHandshake,
+} from '@fortawesome/free-solid-svg-icons';
+
+function AboutSection() {
   return (
-    <section className="about-bg">
-      <div className="about-overlay">
-        <div className="about-container">
-          <div className="about-logo">
-            <img src={logo} alt="Brutus Andreas Logo" />
-          </div>
-          <div className="about-content">
-            <h1>Welcome to <span>Brutus Andreas</span></h1>
-            <p className="intro">
-              We are a forward-thinking company dedicated to transforming the future.
-            </p>
-            <p className="mission">
-              Our mission is to deliver <strong>innovative, sustainable</strong>, and <strong>customer-centric</strong> solutions that connect communities, drive economic growth, and enhance lives.
-            </p>
-            <ul className="values">
-              <li>🚀 Safety & Reliability</li>
-              <li>💡 Innovation & Sustainability</li>
-              <li>🤝 Collaboration & Partnership</li>
-              <li>🧭 Integrity & Accountability</li>
-              <li>🎯 Customer-Centricity</li>
-            </ul>
-            <p className="history">
-              Founded with a vision to create a diversified company, <strong>Brutus Andreas</strong> makes a lasting impact on the environment, economy, and society.
-            </p>
-            <a href="/contact" className="cta-button">Get in Touch</a>
-          </div>
+    <div className="about-wrapper">
+      <div className="about-card">
+        <div className="about-left">
+          <img src={logo} alt="Company Logo" className="about-logo" />
+        </div>
+        <div className="about-right">
+          <h1>
+            About <span>Brutus Andreas</span>
+          </h1>
+          <p className="about-intro">
+            At Brutus Andreas, our mission is to deliver innovative, sustainable, and customer-centric
+            solutions that connect communities, drive economic growth, and enhance the quality of life.
+            We strive to be a trusted partner, a responsible corporate citizen, and a leader in our
+            industries, dedicated to excellence, safety, and integrity.
+          </p>
+
+          <ul className="about-values">
+            <li><FontAwesomeIcon icon={faShieldAlt} /> &nbsp;Safety and Reliability</li>
+            <li><FontAwesomeIcon icon={faUserFriends} /> &nbsp;Customer-Centricity</li>
+            <li><FontAwesomeIcon icon={faLightbulb} /> &nbsp;Innovation and Sustainability</li>
+            <li><FontAwesomeIcon icon={faBalanceScale} /> &nbsp;Integrity and Accountability</li>
+            <li><FontAwesomeIcon icon={faHandshake} /> &nbsp;Collaboration and Partnership</li>
+          </ul>
+
+          <p className="about-history">
+            Brutus Andreas was founded with a vision to create a diversified company that makes a positive impact on the environment, economy, and society.
+          </p>
+
+          <a href="/contact" className="about-cta">Contact Us</a>
         </div>
       </div>
-    </section>
+    </div>
   );
-};
+}
 
 export default AboutSection;

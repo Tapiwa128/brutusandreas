@@ -1,13 +1,14 @@
 import React from 'react';
 import './Contact.css';
+import Header3 from '../../components/Header3/Header3';
 
 function Contact() {
   return (
-    <section className="contact-section">
-      <h2>Contact Us</h2>
-      <p>Have questions? Reach out to us using the form or contact details below.</p>
-      {/* Add your contact form or details here */}
-    </section>
+  <div>
+ 
+ <Header3 />
+
+  </div>
   );
 }
 

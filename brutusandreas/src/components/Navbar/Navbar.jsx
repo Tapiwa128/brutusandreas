@@ -45,9 +45,9 @@ function Navbar() {
           <li className={location.pathname === '/services' ? 'active' : ''}>
             <Link to="/services" onClick={() => setMenuOpen(false)}>Services</Link>
           </li> 
-          
-            <li className={location.pathname === '/pricing' ? 'active' : ''}>
-                <Link to="/pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
+
+            <li className={location.pathname === '/products' ? 'active' : ''}>
+                <Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link>
             </li>
 
 

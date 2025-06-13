@@ -1,94 +1,91 @@
+/* ContactUs.css */
+
 .contactus-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   gap: 40px;
-  padding: 60px 30px;
-  max-width: 1200px;
-  margin: auto;
-  background: #f9fbfc;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contactus-form-section,
 .contactus-info-section {
-  flex: 1 1 500px;
+  flex: 1 1 400px;
   background: white;
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+  border-radius: 20px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contactus-form-section:hover,
+.contactus-info-section:hover {
+  transform: translateY(-5px);
 }
 
 .contactus-form-section h2,
 .contactus-info-section h3 {
-  color: #003f5c;
   margin-bottom: 20px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  color: #1f3a93;
+  font-weight: bold;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  padding: 14px 16px;
-  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
+  border-radius: 10px;
   font-size: 1rem;
   outline: none;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: #00aaff;
-  box-shadow: 0 0 5px rgba(0,170,255,0.3);
+  border-color: #1f3a93;
+  box-shadow: 0 0 5px rgba(31, 58, 147, 0.2);
 }
 
 .contact-form button {
-  background-color: #00aaff;
+  background-color: #1f3a93;
   color: white;
+  padding: 12px 25px;
   border: none;
-  padding: 14px;
-  font-weight: bold;
+  border-radius: 50px;
   font-size: 1rem;
-  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s ease;
+  width: 100%;
 }
 
 .contact-form button:hover {
-  background-color: #008ecc;
+  background-color: #162d69;
 }
 
-.contactus-info-section p {
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.6;
-}
-
+.contactus-info-section p,
 .contactus-info-section a {
-  color: #0077cc;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
   text-decoration: none;
 }
 
 .contactus-info-section a:hover {
-  text-decoration: underline;
+  color: #1f3a93;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .contactus-container {
     flex-direction: column;
-    gap: 30px;
-  }
-
-  .contactus-form-section,
-  .contactus-info-section {
-    width: 100%;
+    padding: 30px 10px;
   }
 }

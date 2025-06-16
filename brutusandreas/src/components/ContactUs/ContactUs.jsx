@@ -15,7 +15,7 @@ function ContactUs() {
         'your_user_id'         // Replace with your EmailJS public key
       )
       .then(
-        (result) => {
+        () => {
           alert('Message sent successfully!');
           e.target.reset();
         },

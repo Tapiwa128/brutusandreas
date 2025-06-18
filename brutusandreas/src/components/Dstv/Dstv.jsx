@@ -1,27 +1,46 @@
-import React from "react";
+import React from 'react';
 import './Dstv.css';
-
 
 const Dstv = () => {
   return (
     <div className="dstv-container">
-      <h1 className="dstv-header">DSTV Services</h1>
-      <p className="dstv-description">
-        We offer a range of DSTV services including installation, repairs, and
-        subscription management. Our team is dedicated to providing you with the
-        best entertainment experience.
-      </p>
-      <div className="dstv-services">
-        <h2>Our Services</h2>
-        <ul>
-          <li>Installation of DSTV dishes and decoders</li>
-          <li>Repairs and maintenance</li>
-          <li>Subscription management</li>
-          <li>Customer support</li>
-        </ul>
-      </div>
+      <h2 className="dstv-title">DStv Packages and Prices</h2>
+      <table className="dstv-table">
+        <thead>
+          <tr>
+            <th>DStv Package</th>
+            <th>Price (USD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Premium</td>
+            <td>$79</td>
+          </tr>
+          <tr>
+            <td>Compact Plus</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>Compact</td>
+            <td>$36</td>
+          </tr>
+          <tr>
+            <td>Family</td>
+            <td>$25</td>
+          </tr>
+          <tr>
+            <td>Access</td>
+            <td>$21</td>
+          </tr>
+          <tr>
+            <td>Lite</td>
+            <td>$14</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
-};          
+};
 
 export default Dstv;

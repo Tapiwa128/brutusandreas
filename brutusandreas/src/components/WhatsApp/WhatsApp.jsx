@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsApp = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const phoneNumber = '+263784891758';
+  const phoneNumber = '+263789684916';
   const waLink = `https://wa.me/${phoneNumber.replace('+', '')}`;
 
   return (

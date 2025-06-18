@@ -1,0 +1,56 @@
+.trucks-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.trucks-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.trucks-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #607d8b;
+}
+
+.trucks-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trucks-table thead {
+  background-color: #1565c0;
+  color: white;
+}
+
+.trucks-table th,
+.trucks-table td {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.trucks-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.available {
+  color: green;
+  font-weight: bold;
+}
+
+.trucks-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e3f2fd;
+  border-left: 5px solid #1565c0;
+  font-size: 1rem;
+  color: #333;
+}

@@ -49,7 +49,7 @@ function ContactUs() {
               <option value="Banking Services">Banking Services</option>
               <option value="DSTV Payments">DSTV Payments</option>
               <option value="Logistics">Logistics</option>
-              <option value="Doves Funeral Services">Doves Funeral Services</option>
+              <option value="Doves Funeral Services">Doves Funeral Services.</option>
             </select>
             <textarea
               name="message"

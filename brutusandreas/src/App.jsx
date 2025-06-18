@@ -7,11 +7,13 @@ import Services from './pages/services/Services';
 import Products from './pages/products/Products';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import WhatsApp from './components/WhatsApp/WhatsApp';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <WhatsApp />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

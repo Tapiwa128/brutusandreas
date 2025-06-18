@@ -18,7 +18,7 @@ const Trucks = () => {
         <tbody>
           <tr>
             <td>Side Tipper Trucks</td>
-            <td>Hwange, Zimbabwe → South Africa</td>
+            <td> Zimbabwe → South Africa</td>
             <td className="available">Available</td>
           </tr>
         </tbody>

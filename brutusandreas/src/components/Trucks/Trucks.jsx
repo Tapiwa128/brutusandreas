@@ -21,6 +21,16 @@ const Trucks = () => {
             <td> Zimbabwe → South Africa</td>
             <td className="available">Available</td>
           </tr>
+          <tr>
+            <td>Drop Side</td>
+            <td> Zimbabwe → South Africa</td>
+            <td className="available">Available</td>
+          </tr>
+          <tr>
+            <td>Flat Deck</td>
+            <td> Zimbabwe → South Africa</td>
+            <td className="available">Available</td>
+          </tr>
         </tbody>
       </table>
 

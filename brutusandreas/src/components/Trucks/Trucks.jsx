@@ -18,17 +18,17 @@ const Trucks = () => {
         <tbody>
           <tr>
             <td>Side Tipper Trucks</td>
-            <td> Zimbabwe → South Africa</td>
+            <td> Zimbabwe → South Africa → Zambia</td>
             <td className="available">Available</td>
           </tr>
           <tr>
             <td>Drop Side</td>
-            <td> Zimbabwe → South Africa</td>
+            <td> Zimbabwe → South Africa → Zambia</td>
             <td className="available">Available</td>
           </tr>
           <tr>
             <td>Flat Deck</td>
-            <td> Zimbabwe → South Africa</td>
+            <td> Zimbabwe → South Africa → Zambia</td>
             <td className="available">Available</td>
           </tr>
         </tbody>

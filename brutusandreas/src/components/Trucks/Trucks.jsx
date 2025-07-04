@@ -4,7 +4,7 @@ import './Trucks.css';
 const Trucks = () => {
   return (
     <div className="trucks-container">
-      <h2 className="trucks-title">Side Tipper Truck Services</h2>
+      <h2 className="trucks-title">Truck Services</h2>
       <p className="trucks-subtitle">Reliable logistics from Hwange, Zimbabwe to South Africa</p>
 
       <table className="trucks-table">
